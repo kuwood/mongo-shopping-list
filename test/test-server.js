@@ -53,7 +53,6 @@ describe('Shopping List', function() {
             .post('/items')
             .send({'name': 'Kale'})
             .end(function(err, res) {
-                console.log(res.body, " --------------------");
                 should.equal(err, null);
                 res.should.have.status(201);
                 res.should.be.json;
@@ -80,7 +79,6 @@ describe('Shopping List', function() {
               .put('/items/' + id)
               .send({'name': 'corn'})
               .end(function(err, res) {
-                console.log(id);
                 should.equal(err, null);
                 res.should.have.status(200);
                 res.should.be.json;
