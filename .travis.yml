@@ -8,3 +8,10 @@ addons:
     - mongodb-3.2-precise
     packages:
     - mongodb-org-server
+deploy:
+  provider: heroku
+  api_key:
+    secure: Ut8k/US2vcv1D8ksXp1iEqdasQbNlqtSdEp4LVIkpgcm6xJW04IMm2mUZsLo9vvi8Cs6es5JtIO5/aNRCEqLDnUBRyfQuvGiPS6aAh7k6RrP5Iu4kOSbU1hRBC0mc+EYFOnd9LSbjv9NMWXswZZoeu86+toGbwvWKn4Vpx1talUACRoTDLAdswzty7N9jgs4yWQ2TjbR1WyfbepLG7HkB7Rhr1H4tmf+R84cohTVO0qmumfKSLWp5XiY8fU50Su7yfIyB7fCh8aV+VRIEowuBXhYDhupMpgHJbP78I4Osl2VYf++FvcQsJWfmIQvUi1Yjxb0bMaCeAdcRo3dHWRklSQN5i9UhjRUFWq+jDJ/Am0+NKzayfNrkPt9V5S2WtgmZuDMBAnBRO9dOsZkO0bouq1BOKP5IU3tinBgLA6+ZIKWpNTMTmOQommHKWWks9L7x+IF/a8HFux/GXp41LF9tqfK4feGXA1OKDLDE/fNhav3NJWu9mABV8JIvfjPlVdlZW3MtoGLukKIsWTGEd8xCbg5hWcK/ClCh6IKA3NhZ6jV4XbTm5Q1Vll33zGhqBp97LERlTMlv7ZFdFvuA9wOW/iKY/mGKmbvd1yb53+xsx0YBhzk3/MgK3SG1srJvAgl+bZzYC9Go15y6pUTlFw5rZ1Kmacwe0gQpdId03lLmqc=
+  app: vast-springs-17353
+  on:
+    repo: kuwood/mongo-shopping-list
